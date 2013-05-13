@@ -5,12 +5,12 @@ Pod::Spec.new do |s|
     s.summary = 'ChartboostSDK for showing ads and more apps pages, and tracking analytics and in-app purchase revenue.'
     s.homepage = 'https://chartboost.com/'
     s.author = { 'Chartboost' => 'https://chartboost.com/' }
-    s.source = { :git => '~/Documents/IBGitRepos/LocalPods/ChartboostSDK' }
+    s.source = { :git => 'https://github.com/ewangke/ChartboostSDK.git', :tag => '3.2' }
     s.platform = :ios
     s.source_files = '**/*.h'
-    s.preserve_paths = '**/*.a'
+    s.preserve_paths = '*.a'
     s.library = 'Chartboost'
-    s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ChartboostSDK/Chartboost"' }
+    s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/ChartboostSDK/"' }
     s.weak_frameworks = 'AdSupport', 'StoreKit'
     s.frameworks = 'QuartzCore', 'SystemConfiguration', 'CoreGraphics'
 end
